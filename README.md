@@ -66,6 +66,8 @@ The technologies I have used are:
 
 ![HTML render](assets/images/HTML-screenshot.png)
 
+View this page also on [Github pages](https://samwakelam.github.io/10_EMPLOYEE_SUMMARY_SLW/).
+
 
 ## Improvements
 
