@@ -60,7 +60,7 @@ const newEmployee = () => {
 const clearEmployees = () => {
     employeeList = [];
     console.log("Employee List cleared.");
-    console.log("employeeList =", employeeList);
+    // console.log("employeeList =", employeeList);
     newEmployee();
 }
 
@@ -84,7 +84,7 @@ const employeeSetup = () => {
                 name:"id", 
                 message: "What is the employee's Id number?", 
                 validate: function(value) {
-                    console.log("value =", value);
+                    // console.log("value =", value);
                     // let valid = !isNaN(parseInt(value));
                     if (parseInt(value)) {
                         return true;
@@ -125,7 +125,7 @@ const employeeSetup = () => {
             },
         ])
         .then((answers) => {
-            console.log("answers =", answers);
+            // console.log("answers =", answers);
             const {role, name, id, email, officeNumber, gitHub, school} = answers;
             switch(answers.role){
                 case "Manager":
@@ -136,7 +136,7 @@ const employeeSetup = () => {
                     // manager.getEmail(email);
                     console.log("manager =", manager); 
                     employeeList.push(manager);
-                    console.log("employeeList =", employeeList);
+                    // console.log("employeeList =", employeeList);
                     newEmployee();
                   break;
                 case "Engineer":
@@ -146,9 +146,9 @@ const employeeSetup = () => {
                     // engineer.getId(id);
                     // engineer.getEmail(email);
                     // engineer.getGithub(gitHub);
-                    console.log("engineer =", engineer); 
+                    // console.log("engineer =", engineer); 
                     employeeList.push(engineer);
-                    console.log("employeeList =", employeeList);
+                    // console.log("employeeList =", employeeList);
                     newEmployee();
                   break;
                 case "Intern":
@@ -158,9 +158,9 @@ const employeeSetup = () => {
                     // intern.getId(id);
                     // intern.getEmail(email);
                     // intern.getSchool(school);
-                    console.log("intern =", intern); 
+                    // console.log("intern =", intern); 
                     employeeList.push(intern);
-                    console.log("employeeList =", employeeList);
+                    // console.log("employeeList =", employeeList);
                     newEmployee();
                   break;
             }
