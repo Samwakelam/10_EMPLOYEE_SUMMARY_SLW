@@ -1,0 +1,130 @@
+/*Body Border */
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(./images/Wood-Texture-text.png);
+    background-repeat: repeat;
+    font-family: Comfortaa, cursive;
+    color: rgb(37, 74, 90);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div#container {
+    background-image: url(./images/Wood-Texture-reduced.png);
+    min-height: 80vh;
+    margin: 70.388px;
+}
+
+.col-12.jumbotron.mb-3.team-heading {
+    background-color: unset;
+    padding: 32px;
+}
+
+h1 {
+    font-family: bungee;
+    color: rgb(37, 74, 90);
+    font-size: 6rem;
+}
+
+/* card Styling */
+
+.card.employee-card {
+    min-width: 200px;
+    border-radius: unset;
+    background-color: rgb(248, 240, 229);
+    border: 1px solid rgba(232, 58, 47, 0.5);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(232, 58, 47, 0.5);
+}
+
+h2, h3, p {
+    font-family: Comfortaa, cursive;
+    color: rgb(37, 74, 90);
+    
+}
+
+ul.manager>.list-group-item {
+    background-color: rgb(202, 163, 124);
+    border: 1px solid rgba(37, 74, 90, 0.5);
+}
+
+ul.engineer>.list-group-item {
+    background-color: rgb(244, 204, 202);
+    border: 1px solid rgba(202, 163, 124, 1);
+}
+
+ul.intern>.list-group-item {
+    background-color: rgb(248, 240, 229);
+    border: 1px solid rgba(202, 163, 124, 0.5);
+}
+
+/* media Queries */
+
+@media screen and (max-width: 700px) {
+    
+    body{
+        min-width: 100vw;
+    }
+    .card-columns {
+        column-count: 1;
+    }
+    div#container {
+        background-image: url(./images/Wood-Texture-reduced.png);
+        min-height: 80vh;
+        margin: 70.388px 0;
+        min-width: 100vw;
+    }
+    .col-12.jumbotron.mb-3.team-heading {
+        padding: 4px;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 700px) and (max-width: 900px) { 
+  
+    .card-columns {
+        column-count: 2;
+    }
+}  
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 1200px) and (max-width: 1400px) { 
+    
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1400px) {
+    
+    .card-columns {
+        column-count: 5;
+    }
+ }
+
+@media screen and (min-width: 1800px) {
+    
+    .card-columns {
+        column-count: 6;
+    }
+}

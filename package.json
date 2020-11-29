@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose test/*"
   },
   "author": "SW",
   "license": "ISC",
   "dependencies": {
+    "email-validator": "^2.0.4",
     "inquirer": "^7.3.3",
     "jest": "^26.6.3"
   }
